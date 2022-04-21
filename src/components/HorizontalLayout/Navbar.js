@@ -148,20 +148,20 @@ class Navbar extends Component {
                                             <div className="dropdown">
                                                 <Link onClick={e => {
                                                     e.preventDefault();
-                                                    this.setState({ EcommerceState: !this.state.EcommerceState });
-                                                }} className="dropdown-item dropdown-toggle arrow-none" to="/#" id="topnav-Ecommerce"
+                                                    this.setState({ ecommerceState: !this.state.ecommerceState });
+                                                }} className="dropdown-item dropdown-toggle arrow-none" to="/#" id="topnav-ecommerce"
                                                     role="button">
                                                     {this.props.t('Ecommerce')} <div className="arrow-down"></div>
                                                 </Link>
-                                                <div className={classname("dropdown-menu", { show: this.state.EcommerceState })} aria-labelledby="topnav-Ecommerce">
-                                                    <Link to="/Ecommerce-products" className="dropdown-item">{this.props.t('Products')}</Link>
-                                                    <Link to="/Ecommerce-product-detail/1" className="dropdown-item">{this.props.t('Product Detail')}</Link>
-                                                    <Link to="/Ecommerce-orders" className="dropdown-item">{this.props.t('Orders')}</Link>
-                                                    <Link to="/Ecommerce-customers" className="dropdown-item">{this.props.t('Customers')}</Link>
-                                                    <Link to="/Ecommerce-cart" className="dropdown-item">{this.props.t('Cart')}</Link>
-                                                    <Link to="/Ecommerce-checkout" className="dropdown-item">{this.props.t('Checkout')}</Link>
-                                                    <Link to="/Ecommerce-shops" className="dropdown-item">{this.props.t('Shops')}</Link>
-                                                    <Link to="/Ecommerce-add-product" className="dropdown-item">{this.props.t('Add Product')}</Link>
+                                                <div className={classname("dropdown-menu", { show: this.state.ecommerceState })} aria-labelledby="topnav-ecommerce">
+                                                    <Link to="/ecommerce-products" className="dropdown-item">{this.props.t('Products')}</Link>
+                                                    <Link to="/ecommerce-product-detail/1" className="dropdown-item">{this.props.t('Product Detail')}</Link>
+                                                    <Link to="/ecommerce-orders" className="dropdown-item">{this.props.t('Orders')}</Link>
+                                                    <Link to="/ecommerce-customers" className="dropdown-item">{this.props.t('Customers')}</Link>
+                                                    <Link to="/ecommerce-cart" className="dropdown-item">{this.props.t('Cart')}</Link>
+                                                    <Link to="/ecommerce-checkout" className="dropdown-item">{this.props.t('Checkout')}</Link>
+                                                    <Link to="/ecommerce-shops" className="dropdown-item">{this.props.t('Shops')}</Link>
+                                                    <Link to="/ecommerce-add-product" className="dropdown-item">{this.props.t('Add Product')}</Link>
                                                 </div>
                                             </div>
 

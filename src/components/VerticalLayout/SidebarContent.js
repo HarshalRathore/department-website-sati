@@ -120,14 +120,14 @@ class SidebarContent extends Component {
                                 <span className="ms-1">{this.props.t('Ecommerce')}</span>
                             </Link>
                             <ul className="sub-menu">
-                                <li><Link to="/Ecommerce-products">{this.props.t('Products')}</Link></li>
-                                <li><Link to="/Ecommerce-product-detail/1">{this.props.t('Product Detail')}</Link></li>
-                                <li><Link to="/Ecommerce-orders">{this.props.t('Orders')}</Link></li>
-                                <li><Link to="/Ecommerce-customers">{this.props.t('Customers')}</Link></li>
-                                <li><Link to="/Ecommerce-cart">{this.props.t('Cart')}</Link></li>
-                                <li><Link to="/Ecommerce-checkout">{this.props.t('Checkout')}</Link></li>
-                                <li><Link to="/Ecommerce-shops">{this.props.t('Shops')}</Link></li>
-                                <li><Link to="/Ecommerce-add-product">{this.props.t('Add Product')}</Link></li>
+                                <li><Link to="/ecommerce-products">{this.props.t('Products')}</Link></li>
+                                <li><Link to="/ecommerce-product-detail/1">{this.props.t('Product Detail')}</Link></li>
+                                <li><Link to="/ecommerce-orders">{this.props.t('Orders')}</Link></li>
+                                <li><Link to="/ecommerce-customers">{this.props.t('Customers')}</Link></li>
+                                <li><Link to="/ecommerce-cart">{this.props.t('Cart')}</Link></li>
+                                <li><Link to="/ecommerce-checkout">{this.props.t('Checkout')}</Link></li>
+                                <li><Link to="/ecommerce-shops">{this.props.t('Shops')}</Link></li>
+                                <li><Link to="/ecommerce-add-product">{this.props.t('Add Product')}</Link></li>
                             </ul>
                         </li>
 

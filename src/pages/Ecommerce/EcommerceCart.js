@@ -122,7 +122,7 @@ class EcommerceCart extends Component {
                                 <h5 className="font-size-14 text-truncate">
                                   <Link
                                     to={
-                                      "/Ecommerce-product-details/" + product.id
+                                      "/ecommerce-product-details/" + product.id
                                     }
                                     className="text-dark"
                                   >

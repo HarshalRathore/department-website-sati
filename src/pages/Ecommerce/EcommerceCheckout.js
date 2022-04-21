@@ -819,7 +819,7 @@ class EcommerceCheckout extends Component {
                               <td>
                                 <h5 className="font-size-14 text-truncate">
                                   <Link
-                                    to="/Ecommerce-product-details/1"
+                                    to="/ecommerce-product-details/1"
                                     className="text-dark"
                                   >
                                     {orderitem.productTitle}{" "}
