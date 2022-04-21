@@ -88,7 +88,7 @@ function* fetchShops() {
   }
 }
 
-function* ecommerceSaga() {
+function* EcommerceSaga() {
   yield takeEvery(GET_PRODUCTS, fetchProducts)
   yield takeEvery(GET_PRODUCT_DETAIL, fetchProductDetail)
   yield takeEvery(GET_ORDERS, fetchOrders)
@@ -97,4 +97,4 @@ function* ecommerceSaga() {
   yield takeEvery(GET_SHOPS, fetchShops)
 }
 
-export default ecommerceSaga
+export default EcommerceSaga

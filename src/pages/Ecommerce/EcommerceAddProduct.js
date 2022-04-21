@@ -209,7 +209,7 @@ class EcommerceAddProduct extends Component {
                                 <select className="form-control select2">
                                   <option>Select</option>
                                   <option value="EL">Electronic</option>
-                                  <option value="FA">Fashion</option>
+                                  <option value="FA">Students</option>
                                   <option value="FI">Fitness</option>
                                 </select>
                               </div>

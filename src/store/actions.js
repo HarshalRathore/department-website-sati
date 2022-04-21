@@ -8,7 +8,7 @@ export * from './auth/forgetpwd/actions';
 // Calendar actions
 export * from "./calendar/actions";
 
-//ecommerce actions
+//Ecommerce actions
 export * from "./e-commerce/actions";
 
 //chat

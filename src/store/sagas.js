@@ -13,7 +13,7 @@ import calendarSaga from "./calendar/saga";
 import chatSaga from "./chat/saga"
 
 //Ecommerce saga
-import ecommerceSaga from "./e-commerce/saga";
+import EcommerceSaga from "./e-commerce/saga";
 
 export default function* rootSaga() {
     yield all([
@@ -24,7 +24,7 @@ export default function* rootSaga() {
         forgetSaga(),
         LayoutSaga(),
         calendarSaga(),
-        ecommerceSaga(),
+        EcommerceSaga(),
         chatSaga(),
     ])
 }

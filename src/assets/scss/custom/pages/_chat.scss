@@ -135,7 +135,7 @@
 }
 
 
-.chat-conversation {
+.chat-converEcommerceon {
     li {
         clear: both;
     }
@@ -181,7 +181,7 @@
         }
     }
 
-    .conversation-list {
+    .converEcommerceon-list {
         margin-bottom: 24px;
         display: inline-block;
         position: relative;
@@ -189,7 +189,7 @@
         .ctext-wrap {
             overflow: hidden;
 
-            .conversation-name {
+            .converEcommerceon-name {
                 font-weight: $font-weight-semibold;
                 margin-bottom: 7px;
             }
@@ -210,10 +210,10 @@
     }
 
     .right {
-        .conversation-list {
+        .converEcommerceon-list {
             float: right;
 
-            .conversation-name {
+            .converEcommerceon-name {
                 text-align: right;
             }
 

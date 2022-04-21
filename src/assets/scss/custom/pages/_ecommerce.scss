@@ -1,5 +1,5 @@
 // 
-// ecommerce.scss
+// Ecommerce.scss
 //
 
 // product
@@ -19,7 +19,7 @@
 }
 
 
-.ecommerce {
+.Ecommerce {
 
     .accordion-item {
         border-bottom: 1px solid $border-color;
@@ -114,7 +114,7 @@
     }
 }
 
-.ecommerce-sortby-list{
+.Ecommerce-sortby-list{
     li{
         color: $dark;
         a{
@@ -206,7 +206,7 @@
     }           
 }
 
-// ecommerce cart
+// Ecommerce cart
 
 .product-cart-touchspin{
     border: 1px solid $input-border-color;
@@ -228,7 +228,7 @@
 
 }
 
-// ecommerce checkout
+// Ecommerce checkout
 
 .shipping-address{
     box-shadow: none;

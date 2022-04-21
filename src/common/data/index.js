@@ -10,7 +10,7 @@ import {
     shops,
     customerData,
     cartData
-} from "./ecommerce"
+} from "./Ecommerce"
 
 import { chats, contacts, groups, messages } from "./chat";
 

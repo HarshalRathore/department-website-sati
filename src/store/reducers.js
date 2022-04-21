@@ -14,7 +14,7 @@ import Calendar from "./calendar/reducer";
 //chat
 import chat from "./chat/reducer"
 
-//ecommerce
+//Ecommerce
 import Ecommerce from "./e-commerce/reducer";
 
 const rootReducer = combineReducers({

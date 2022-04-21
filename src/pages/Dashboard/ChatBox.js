@@ -83,16 +83,16 @@ class ChatBox extends Component {
                         </CardBody>
                         <CardBody>
                             <div className="chat-widget">
-                                <div className="chat-conversation" >
+                                <div className="chat-converEcommerceon" >
                                     <SimpleBar style={{ maxHeight: "237px" }}>
                                         <ul className="list-unstyled mb-0 pr-3">
                                             <li>
-                                                <div className="conversation-list">
+                                                <div className="converEcommerceon-list">
                                                     <div className="chat-avatar">
                                                         <img src={avatar2} alt="" />
                                                     </div>
                                                     <div className="ctext-wrap">
-                                                        <div className="conversation-name">Frank Vickery</div>
+                                                        <div className="converEcommerceon-name">Frank Vickery</div>
                                                         <div className="ctext-wrap-content">
                                                             <p className="mb-0">
                                                                 Hey! I am available
@@ -105,9 +105,9 @@ class ChatBox extends Component {
                                             </li>
 
                                             <li className="right">
-                                                <div className="conversation-list">
+                                                <div className="converEcommerceon-list">
                                                     <div className="ctext-wrap">
-                                                        <div className="conversation-name">Ricky Clark</div>
+                                                        <div className="converEcommerceon-name">Ricky Clark</div>
                                                         <div className="ctext-wrap-content">
                                                             <p className="mb-0">
                                                                 Hi, How are you? What about our next meeting?
@@ -125,12 +125,12 @@ class ChatBox extends Component {
                                                 </div>
                                             </li>
                                             <li>
-                                                <div className="conversation-list">
+                                                <div className="converEcommerceon-list">
                                                     <div className="chat-avatar">
                                                         <img src={avatar2} alt="" />
                                                     </div>
                                                     <div className="ctext-wrap">
-                                                        <div className="conversation-name">Frank Vickery</div>
+                                                        <div className="converEcommerceon-name">Frank Vickery</div>
                                                         <div className="ctext-wrap-content">
                                                             <p className="mb-0">
                                                                 Hello!
@@ -143,9 +143,9 @@ class ChatBox extends Component {
                                             </li>
 
                                             <li className="right">
-                                                <div className="conversation-list">
+                                                <div className="converEcommerceon-list">
                                                     <div className="ctext-wrap">
-                                                        <div className="conversation-name">Ricky Clark</div>
+                                                        <div className="converEcommerceon-name">Ricky Clark</div>
                                                         <div className="ctext-wrap-content">
                                                             <p className="mb-0">
                                                                 Hi, How are you? What about our next meeting?
@@ -158,12 +158,12 @@ class ChatBox extends Component {
                                             </li>
 
                                             <li>
-                                                <div className="conversation-list">
+                                                <div className="converEcommerceon-list">
                                                     <div className="chat-avatar">
                                                         <img src={avatar2} alt="" />
                                                     </div>
                                                     <div className="ctext-wrap">
-                                                        <div className="conversation-name">Frank Vickery</div>
+                                                        <div className="converEcommerceon-name">Frank Vickery</div>
                                                         <div className="ctext-wrap-content">
                                                             <p className="mb-0">
                                                                 Yeah everything is fine
@@ -177,12 +177,12 @@ class ChatBox extends Component {
                                             </li>
 
                                             <li >
-                                                <div className="conversation-list">
+                                                <div className="converEcommerceon-list">
                                                     <div className="chat-avatar">
                                                         <img src={avatar2} alt="" />
                                                     </div>
                                                     <div className="ctext-wrap">
-                                                        <div className="conversation-name">Frank Vickery</div>
+                                                        <div className="converEcommerceon-name">Frank Vickery</div>
                                                         <div className="ctext-wrap-content">
                                                             <p className="mb-0">& Next meeting tomorrow 10.00AM</p>
                                                         </div>
@@ -193,9 +193,9 @@ class ChatBox extends Component {
                                             </li>
 
                                             <li className="right">
-                                                <div className="conversation-list">
+                                                <div className="converEcommerceon-list">
                                                     <div className="ctext-wrap">
-                                                        <div className="conversation-name">Ricky Clark</div>
+                                                        <div className="converEcommerceon-name">Ricky Clark</div>
                                                         <div className="ctext-wrap-content">
                                                             <p className="mb-0">
                                                                 Wow that's great

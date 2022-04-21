@@ -238,7 +238,7 @@ class EcommerceProducts extends Component {
 
                 <CardBody>
                   <h5 className="font-size-14 mb-3">Categories</h5>
-                  <div className="accordion ecommerce" id="accordionExample">
+                  <div className="accordion Ecommerce" id="accordionExample">
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
                         <button
@@ -299,7 +299,7 @@ class EcommerceProducts extends Component {
                           data-bs-toggle="collapse"
                         >
                           <i className="mdi mdi-hanger font-size-16 align-middle me-2"></i>{" "}
-                          Fashion
+                          Students
                         </button>
                       </h2>
                       <Collapse
@@ -311,25 +311,25 @@ class EcommerceProducts extends Component {
                             <li className="active">
                               <Link to="#">
                                 <i className="mdi mdi-circle-medium me-1"></i>{" "}
-                                Clothing
+                                AIADS
                               </Link>
                             </li>
                             <li>
                               <Link to="#">
                                 <i className="mdi mdi-circle-medium me-1"></i>{" "}
-                                Footwear
+                                CSE
                               </Link>
                             </li>
                             <li>
                               <Link to="#">
                                 <i className="mdi mdi-circle-medium me-1"></i>{" "}
-                                Watches
+                                Civil
                               </Link>
                             </li>
                             <li>
                               <Link to="#">
                                 <i className="mdi mdi-circle-medium me-1"></i>{" "}
-                                Sportswear
+                                Mechanical
                               </Link>
                             </li>
                           </ul>
@@ -354,8 +354,8 @@ class EcommerceProducts extends Component {
                       >
                         <div className="accordion-body">
                           <ul className="list-unstyled categories-list mb-0">
-                              <li><Link to="#"><i className="mdi mdi-circle-medium me-1"></i> Clothing</Link></li>
-                              <li><Link to="#"><i className="mdi mdi-circle-medium me-1"></i> Footwear</Link></li>
+                              <li><Link to="#"><i className="mdi mdi-circle-medium me-1"></i> AIADS</Link></li>
+                              <li><Link to="#"><i className="mdi mdi-circle-medium me-1"></i> CSE</Link></li>
                               <li><Link to="#"><i className="mdi mdi-circle-medium me-1"></i> Toys</Link></li>
                               <li><Link to="#"><i className="mdi mdi-circle-medium me-1"></i> Baby care</Link></li>
                           </ul>
@@ -629,10 +629,10 @@ class EcommerceProducts extends Component {
                     <Row>
                       <Col md="6">
                         <div>
-                          <h5>Clothes & Accessories</h5>
+                          <h5>Samrat Ashok Technological Institute</h5>
                           <ol class="breadcrumb p-0 bg-transparent mb-2">
-                            <li class="breadcrumb-item"><Link to="#">Fashion</Link></li>
-                            <li class="breadcrumb-item"><Link to="#">Clothing</Link></li>
+                            <li class="breadcrumb-item"><Link to="#">Students</Link></li>
+                            <li class="breadcrumb-item"><Link to="#">AIADS</Link></li>
                             <li class="breadcrumb-item active">T-shirts</li>
                           </ol>
                         </div>
@@ -654,7 +654,7 @@ class EcommerceProducts extends Component {
                       </Col>
                     </Row>
 
-                    <ul class="list-inline my-3 ecommerce-sortby-list">
+                    <ul class="list-inline my-3 Ecommerce-sortby-list">
                         <li class="list-inline-item"><span class="fw-medium font-family-secondary">Sort by:</span></li>
                         <li class="list-inline-item active"><Link to="#">Popularity</Link></li>
                         <li class="list-inline-item"><Link to="#">Newest</Link></li>
@@ -669,7 +669,7 @@ class EcommerceProducts extends Component {
                               className="product-box"
                               onClick={() =>
                                 history.push(
-                                  `/ecommerce-product-detail/${product.id}`
+                                  `/Ecommerce-product-detail/${product.id}`
                                 )
                               }
                             >
@@ -704,7 +704,7 @@ class EcommerceProducts extends Component {
                                 <h5 class="font-size-15">
                                   <Link
                                     to={
-                                      "/ecommerce-product-detail/" + product.id
+                                      "/Ecommerce-product-detail/" + product.id
                                     }
                                     className="text-dark"
                                   >

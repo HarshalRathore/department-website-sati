@@ -208,7 +208,7 @@ class DripiIcons extends Component {
                                                 <i className="dripicons-contract-2"></i> dripicons-contract-2
                                             </Col>
                                             <Col xl={3} lg={4} sm={6}>
-                                                <i className="dripicons-conversation"></i> dripicons-conversation
+                                                <i className="dripicons-converEcommerceon"></i> dripicons-converEcommerceon
                                             </Col>
                                             <Col xl={3} lg={4} sm={6}>
                                                 <i className="dripicons-copy"></i> dripicons-copy

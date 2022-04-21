@@ -174,14 +174,14 @@ const authProtectedRoutes = [
 
 	//Ecommerce
 	
-	{ path: "/ecommerce-products", component: EcommerceProducts },
-	{ path: "/ecommerce-product-detail/:id", component: EcommerceProductDetail },
-	{ path: "/ecommerce-orders", component: EcommerceOrders },
-	{ path: "/ecommerce-customers", component: EcommerceCustomers },
-	{ path: "/ecommerce-cart", component: EcommerceCart },
-	{ path: "/ecommerce-checkout", component: EcommerceCheckout },
-	{ path: "/ecommerce-shops", component: EcommerceShops },
-	{ path: "/ecommerce-add-product", component: EcommerceAddProduct },  
+	{ path: "/Ecommerce-products", component: EcommerceProducts },
+	{ path: "/Ecommerce-product-detail/:id", component: EcommerceProductDetail },
+	{ path: "/Ecommerce-orders", component: EcommerceOrders },
+	{ path: "/Ecommerce-customers", component: EcommerceCustomers },
+	{ path: "/Ecommerce-cart", component: EcommerceCart },
+	{ path: "/Ecommerce-checkout", component: EcommerceCheckout },
+	{ path: "/Ecommerce-shops", component: EcommerceShops },
+	{ path: "/Ecommerce-add-product", component: EcommerceAddProduct },  
 
 	//chat
 	{ path: "/chat", component: Chat },

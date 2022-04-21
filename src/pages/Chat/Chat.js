@@ -509,7 +509,7 @@ class Chat extends Component {
                 </div>
 
                 <div className="px-lg-2">
-                  <div className="chat-conversation p-3 chat-conversation-height">
+                  <div className="chat-converEcommerceon p-3 chat-converEcommerceon-height">
                     <ul className="list-unstyled mb-0 pe-3">
                       <PerfectScrollbar style={{ maxHeight: "450px" }}>
                         {messages.map((message, key) => (
@@ -523,7 +523,7 @@ class Chat extends Component {
                             style={{ paddingRight: "20px" }}
                           >
                               
-                            <div className="conversation-list">
+                            <div className="converEcommerceon-list">
                               
                                 <div className="chat-avatar">
                                   <img src={ message.image ? message.image : user1 } alt="" />
@@ -531,7 +531,7 @@ class Chat extends Component {
                               
 
                               <div className="ctext-wrap">
-                                <div className="conversation-name">
+                                <div className="converEcommerceon-name">
                                   {message.sender}
                                 </div>
                                 <div className="ctext-wrap-content">
