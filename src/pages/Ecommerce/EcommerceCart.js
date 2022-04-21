@@ -99,24 +99,29 @@ class EcommerceCart extends Component {
                       <Table className="table align-middle mb-0 table-nowrap">
                         <thead className="bg-light">
                           <tr>
-                            <th style={{width: "120px"}}>Product</th>
-                            <th>Product Desc</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th className="text-center">Action</th>
+                            <th>Enrollment No.</th>
+                            <th>Student Name</th>
+                            <th colspan="3">Attendance</th>
+                            
+                            
+                          </tr>
+                          <tr>
+                            <th></th>
+                            <th></th>
+                              <th>Today</th>
+                              <th>Today</th>
+                              <th>Today</th>
+                              <th>Today</th>
+                              <th>Today</th>
+                              <th>Today</th>
+                              <th>Today</th>
                           </tr>
                         </thead>
                         <tbody>
                           {map(productList, (product) => (
                             <tr key={product.id}>
                               <td>
-                                <img
-                                  src={product.img}
-                                  alt="product-img"
-                                  title="product-img"
-                                  className="avatar-md"
-                                />
+                               {product.id}
                               </td>
                               <td>
                                 <h5 className="font-size-14 text-truncate">
@@ -129,16 +134,22 @@ class EcommerceCart extends Component {
                                     {product.name}
                                   </Link>
                                 </h5>
-                                <p className="mb-0">
-                                  Color :{" "}
-                                  <span className="fw-medium">
-                                    {product.color}
-                                  </span>
-                                </p>
+                                
                               </td>
-                              <td>$ {product.price}</td>
+                              <td>P</td>
+                              <td>A</td>
+                              <td>A</td>
+                              <td>P</td>
+                              <td>L</td>
+                              <td>A</td>
                               <td>
-                                <div
+
+                              <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-success">P</button>
+  <button type="button" class="btn btn-danger">A</button>
+  <button type="button" class="btn btn-warning">L</button>
+</div>
+                                {/* <div
                                   style={{ width: "120px" }}
                                   className="product-cart-touchspin"
                                 >
@@ -180,9 +191,9 @@ class EcommerceCart extends Component {
                                       </Button>
                                     </span>
                                   </InputGroup>
-                                </div>
+                                </div> */}
                               </td>
-                              <td>$ {product.total}</td>
+                              {/* <td>$ {product.total}</td>
                               <td style={{ width: "90px" }} className="text-center">
                                 <Link
                                   to="#"
@@ -194,36 +205,22 @@ class EcommerceCart extends Component {
                                   {" "}
                                   <i className="mdi mdi-trash-can font-size-18" />
                                 </Link>
-                              </td>
+                              </td> */}
                             </tr>
                           ))}
                           <tr className="bg-light text-end">
                             <th scope="row" colSpan="5">
-                              Sub Total :
+                            Total Present :
                             </th>
 
-                            <td>$ 1530</td>
+                            <td>23</td>
                           </tr>
                           <tr className="bg-light text-end">
                             <th scope="row" colSpan="5">
-                              Discount :
+                              Absent :
                             </th>
 
-                            <td>- $ 30</td>
-                          </tr>
-                          <tr className="bg-light text-end">
-                            <th scope="row" colSpan="5">
-                              Shipping Charge :
-                            </th>
-
-                            <td>$ 25</td>
-                          </tr>
-                          <tr className="bg-light text-end">
-                            <th scope="row" colSpan="5">
-                              Total :
-                            </th>
-
-                            <td>$ 1525</td>
+                            <td>10</td>
                           </tr>
                         </tbody>
                       </Table>
