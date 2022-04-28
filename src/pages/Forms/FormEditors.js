@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import { Form, Card, CardBody, Col, Row, CardTitle, CardSubtitle, Container } from "reactstrap";
+import { Form, Card, CardBody, Col, Row, CardTitle, Container } from "reactstrap";
 
 // Form Editor
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-
-//Import Breadcrumb
-import Breadcrumbs from '../../components/Common/Breadcrumb';
 
 class FormEditors extends Component {
   constructor(props) {

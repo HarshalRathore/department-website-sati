@@ -1,25 +1,11 @@
-import React, { Component } from 'react'
-import { CardBody, Card, CardText, CardTitle, Row, Col, CardImg, Container } from 'reactstrap'
+import React from 'react'
+import { CardBody, Card, CardTitle, Row, Col, CardImg, Container } from 'reactstrap'
 import FormEditors from '../Forms/FormEditors';
 import img2 from "../../assets/images/small/img-2.jpg";
-import img3 from "../../assets/images/small/img-3.jpg";
 import DueDates from "./DueDates";
 // import SimpleBar from 'simplebar-react';
-import {
-
-
-
-    Button,
-    ButtonToggle,
-    ButtonGroup,
-    ButtonToolbar,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    ButtonDropdown,
-} from "reactstrap";
-import UiButtons from '../Ui/UiButtons';
-import RecentlyActivity from '../Dashboard/RecentlyActivity';
+import { Button } from "reactstrap";
+import Assignments from './Assingments';
 export default function DetailedCourse() {
     return (
         <React.Fragment>
@@ -60,7 +46,7 @@ export default function DetailedCourse() {
                             <Row>
 
                             </Row>
-                            <RecentlyActivity />
+                            <Assignments />
                         </Col>
                     </Row>
                 </Container>

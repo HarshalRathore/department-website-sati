@@ -103,6 +103,7 @@ import ForgetPwd1 from "../pages/AuthenticationInner/ForgetPassword";
 //Kanban Board
 import KanbanBoard from "../pages/KanbanBoard/index";
 import DetailedCourse from "../pages/DetailedCourse/DetailedCourse";
+import TimeTable from "../pages/TimeTable";
 
 const authProtectedRoutes = [
 
@@ -111,6 +112,7 @@ const authProtectedRoutes = [
 	
 	//detailed courses
 	{ path: "/detailed-course/", component: DetailedCourse},
+	{ path: "/time-table", component: TimeTable },
 
 	// Tables
 	{ path: "/basic-tables", component: BasicTables },
