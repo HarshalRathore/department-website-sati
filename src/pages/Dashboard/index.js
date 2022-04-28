@@ -6,14 +6,8 @@ import Breadcrumbs from '../../components/Common/Breadcrumb';
 
 //Import Components
 import MiniWidgets from "./MiniWidgets";
-import RevenueAnalytics from "./RevenueAnalytics";
-import SalesAnalytics from "./SalesAnalytics";
-import EarningReports from "./EarningReports";
 import Sources from "./Sources";
 import RecentlyActivity from "./RecentlyActivity";
-import RevenueByLocations from "./RevenueByLocations";
-import ChatBox from "./ChatBox";
-import LatestTransactions from "./LatestTransactions";
 
 class Dashboard extends Component {
     constructor(props) {
@@ -43,7 +37,6 @@ class Dashboard extends Component {
                                 <Row>
                                     <MiniWidgets reports={this.state.reports} />
                                 </Row>
-
                                 {/* recent activity */}
                                 <RecentlyActivity />
                             </Col>
@@ -52,14 +45,13 @@ class Dashboard extends Component {
 
                                 {/* sources */}
                                 <Sources />
-
                             </Col>
                         </Row>
 
                     </Container>
                 </div>
             </React.Fragment>
-        );
+        );  
     }
 }
 

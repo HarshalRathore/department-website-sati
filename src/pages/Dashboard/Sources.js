@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { Card, CardBody, Col, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Table } from "reactstrap";
 import { Link } from "react-router-dom";
 
-//Import Images
-import img1 from "../../assets/images/companies/img-1.png";
-import img2 from "../../assets/images/companies/img-2.png";
-import img3 from "../../assets/images/companies/img-3.png";
-
 class Sources extends Component {
     constructor(props) {
         super(props);

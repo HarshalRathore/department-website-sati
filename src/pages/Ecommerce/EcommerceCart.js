@@ -3,13 +3,10 @@ import { connect } from "react-redux";
 import { map, isEmpty, size } from "lodash";
 import PropTypes from "prop-types";
 import {
-  Button,
   Card,
   CardBody,
   Col,
   Container,
-  Input,
-  InputGroup,
   Row,
   Table,
 } from "reactstrap";

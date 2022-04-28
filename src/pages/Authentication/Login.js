@@ -97,7 +97,7 @@ class Login extends Component {
 
                                                     <div className="mt-5 text-center">
                                                         <p>Don't have an account ? <Link to="/register" className="fw-medium text-primary"> Register </Link> </p>
-                                                        <p>© 2021 Nazox. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                                        <p>© 2022 WebCrisp. Crafted with <i className="mdi mdi-heart text-danger"></i> by <a href="https://webcrisp.me">WebCrisp</a></p>
                                                     </div>
                                                 </div>
 

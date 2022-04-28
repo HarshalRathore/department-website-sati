@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Card, CardBody, CardTitle, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, CardSubtitle, CardImg, CardText, CardHeader, CardImgOverlay, CardFooter, CardColumns, Container, CardGroup } from "reactstrap";
+import { Col, Row, Card, CardBody, CardTitle, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, CardText } from "reactstrap";
 
 //Simple bar
 import SimpleBar from "simplebar-react";
