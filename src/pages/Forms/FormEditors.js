@@ -22,21 +22,17 @@ class FormEditors extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="page-content">
-          <Container fluid={true}>
+        
+          <Container>
 
-            <Breadcrumbs title="Form Editors" breadcrumbItems={this.state.breadcrumbItems} />
+            {/* <Breadcrumbs title="Form Editors" breadcrumbItems={this.state.breadcrumbItems} /> */}
 
             <Row>
               <Col>
                 <Card>
                   <CardBody>
-                    <CardTitle>react-draft-wysiwyg</CardTitle>
-                    <CardSubtitle className="mb-3">
-                      Bootstrap-wysihtml5 is a javascript plugin that makes it
-                      easy to create simple, beautiful wysiwyg editors with the
-                      help of wysihtml5 and Twitter Bootstrap.
-                    </CardSubtitle>
+                    <CardTitle>Announce something to your class</CardTitle>
+                    
 
                     <Form method="post">
                       <Editor
@@ -52,7 +48,7 @@ class FormEditors extends Component {
             </Row>
 
           </Container>
-        </div>
+        
       </React.Fragment>
     );
   }
