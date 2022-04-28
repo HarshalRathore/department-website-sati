@@ -43,6 +43,8 @@ class EcommerceCart extends Component {
   }
 
   componentDidUpdate(prevProps) {
+    // const student :{
+    // }
     const {
       cartData: { products },
     } = this.props;
