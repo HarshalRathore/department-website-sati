@@ -16,9 +16,9 @@ import company8 from '../../assets/images/companies/img-8.png';
 
 const productsData = [
   {
-    id: 1,
+    id: 30518,
     image: product1,
-    name: "Full sleeve T-shirt",
+    name: "Jatin",
     extrades: "Blue color, T-shirt",
     description: "Lorem ipsum dolor sit consec te imperdiet iaculis ipsum..",
     date: "22/05/2017",
@@ -401,36 +401,36 @@ const orders = [
 const cartData = {
   products: [
     {
-      id: 1,
+      id: 30494,
       img: product1,
-      name: "Full sleeve T-shirt",
+      name: "Jatin kshatriya",
       color: "Blue",
       price: "240",
       data_attr: 2,
       total: 480,
     },
     {
-      id: 2,
+      id: 30518,
       img: product2,
-      name: "Half sleeve T-shirt",
+      name: "Prashant patel",
       color: "Red",
       price: "225",
       data_attr: 1,
       total: 225,
     },
     {
-      id: 3,
+      id: 30556,
       img: product3,
-      name: "Hoodie (Green)",
+      name: "Kushagra ",
       color: "Green",
       price: "275",
       data_attr: 2,
       total: 550,
     },
     {
-      id: 4,
+      id: 47899,
       img: product4,
-      name: "Hoodie (Gray)",
+      name: "Himanshu",
       color: "Gray",
       price: "275",
       data_attr: 1,
