@@ -1,90 +1,88 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
+import { Switch, BrowserRouter as Router } from "react-router-dom";
+import { connect } from "react-redux";
 
-import "./style.css";
+// Import Routes
+import { authProtectedRoutes, publicRoutes } from "./routes/";
+import AppRoute from "./routes/route";
 
-function App() {
-  // React States
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+// layouts
+import HorizontalLayout from "./components/HorizontalLayout/";
+import NonAuthLayout from "./components/NonAuthLayout";
 
-  // User Login info
-  const database = [
-    {
-      username: "user1",
-      password: "pass1"
-    },
-    {
-      username: "user2",
-      password: "pass2"
-    }
-  ];
+// Import scss
+import "./assets/scss/theme.scss";
 
-  const errors = {
-    uname: "invalid username",
-    pass: "invalid password"
-  };
+//Fake backend
+import fakeBackend from './helpers/AuthType/fakeBackend';
 
-  const handleSubmit = (event) => {
-    //Prevent page reload
-    event.preventDefault();
+//Firebase helper
+// import { initFirebaseBackend } from "./helpers/firebase_helper";
 
-    var { uname, pass } = document.forms[0];
+// Activating fake backend
+fakeBackend();
 
-    // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
+class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+		this.getLayout = this.getLayout.bind(this);
+	}
 
-    // Compare user info
-    if (userData) {
-      if (userData.password !== pass.value) {
-        // Invalid password
-        setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
-        setIsSubmitted(true);
-      }
-    } else {
-      // Username not found
-      setErrorMessages({ name: "uname", message: errors.uname });
-    }
-  };
+	/*
+   * Returns the layout
+   */
+	getLayout = () => {
+		let layoutCls = HorizontalLayout;
 
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
+		// switch (this.props.layout.layoutType) {
+		// 	case "horizontal":
+		// 		layoutCls = HorizontalLayout;
+		// 		break;
+		// 	default:
+		// 		layoutCls = VerticalLayout;
+		// 		break;
+		// }
+		return layoutCls;
+	};
 
-  // JSX code for login form
-  const renderForm = (
-    <div className="form">
-      <form onSubmit={handleSubmit}>
-        <div className="input-container">
-          <label>Username </label>
-          <input type="text" name="uname" required />
-          {renderErrorMessage("uname")}
-        </div>
-        <div className="input-container">
-          <label>Password </label>
-          <input type="password" name="pass" required />
-          {renderErrorMessage("pass")}
-        </div>
-        <div className="button-container">
-          <input type="submit" />
-        </div>
-      </form>
-    </div>
-  );
+	render() {
+		const Layout = this.getLayout();
 
-  return (
-    <div className="app">
-      <div className="login-form">
-        <div className="title">Sign In</div>
-        {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
-      </div>
-    </div>
-  );
+		return (
+			<React.Fragment>
+				<Router>
+					<Switch>
+						{publicRoutes.map((route, idx) => (
+							<AppRoute
+								path={route.path}
+								layout={NonAuthLayout}
+								component={route.component}
+								key={idx}
+								isAuthProtected={false}
+							/>
+						))}
+
+						{authProtectedRoutes.map((route, idx) => (
+							<AppRoute
+								path={route.path}
+								layout={Layout}
+								component={route.component}
+								key={idx}
+								isAuthProtected={true}
+							/>
+						))}
+					</Switch>
+				</Router>
+			</React.Fragment>
+		);
+	}
 }
 
-export default App;
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(<App />, rootElement);
+const mapStateToProps = state => {
+	return {
+		layout: state.Layout
+	};
+};
+
+export default connect(mapStateToProps, null)(App);
